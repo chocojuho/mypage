@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/* 공통 */
+.check_box input[type="checkbox"]{display:none;}
+.check_box input[type="checkbox"] + label{position:relative;font-size:15px;margin-left:30px}
+.check_box input[type="checkbox"] + label:before{content:"";display:block;background: url('./img/check.svg') no-repeat center;background-size:100%;position:absolute;width:23px;height:23px;border:solid 1px #dddddd;border-radius:50%;top:-3px;left:-30px}
+.check_box input[type="checkbox"]:checked + label:before{border-color:#1d73f3;background-image:url('./img/check_on.svg')}
+.btn_submit {width:calc(100% - 60px);height:60px;background:#1d73f3;border:solid 1px #1d73f3;color:#ffffff;margin:30px 0 20px;font-size:18px;transition:all .2s}
+
+/* 로그인 */
+.mem05_skin {width:420px;background:#ffffff;border:solid 1px #dddddd;padding-bottom:50px;margin:80px auto 0}
+.mem05_skin .logo {text-align:center;padding:30px 0}
+.mem05_skin .logo img {height:90px}
+
+#login_fs {text-align:center;}
+#login_fs .frm_input {width:calc(100% - 60px);height:50px;border:solid 1px transparent;background:#f6f6f6;padding-left:25px;font-size:16px;}
+#login_fs .frm_input:focus {border:solid 1px #1d73f3}
+#login_fs .frm_input::placeholder {color:#999999}
+#login_fs #login_pw {margin-top:15px}
+#login_fs .info_wrap {display:flex;align-items:center;justify-content:space-between;margin-top:20px;padding:0 30px}
+#login_fs .info_wrap #lost_password a {font-size:14px;color:#999999;position:relative}
+#login_fs .info_wrap #lost_password #join:hover {color:#1d73f3}
+
+.join {display:flex;justify-content:center;color:#999999;font-size:15px}
+.join a {margin-left:10px;transition:all .2s}
+.join a:hover {color:#1d73f3}
+
+.sns_login {margin-top:60px;text-align:center}
+.sns_login .sns_login_title {position:relative;}
+.sns_login .sns_login_title:before {content:'';display:block;width:calc(100% - 60px);height:1px;background:#dddddd;position:absolute;top:50%;left:30px;z-index:-1}
+.sns_login span {background:#ffffff;padding:10px 30px;font-size:14px;color:#999999}
+.sns_login .sns_list {margin-top:30px;display:flex;align-items: center;justify-content:center}
+.sns_login .sns_list li + li {margin-left:20px;}
+.sns_login .sns_list li a {display:flex;align-items:center;justify-content:center;width:58px;height:58px;border-radius:50%;}
+.sns_login .sns_list li a.google_login {border:solid 1px #dddddd}
+.sns_login .sns_list li a.facebook_login {background-color:#1877f2}
+.sns_login .sns_list li a.naver_login {background-color:#00c60c}
+.sns_login .sns_list li a.kakao_login {background-color:#fee500}
+.sns_login .sns_list li a img {width:38px;}
